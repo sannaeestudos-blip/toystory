@@ -1,0 +1,71 @@
+.toy-card{
+
+  &:hover{
+    background-color: rgb(226, 126, 171);
+  }
+}
+.botao-dono {
+  background-color: #A16207; 
+  color: #FEF3C7;
+  border: 2px solid #d5af32;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-family: 'Georgia', serif; 
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.botao-dono:hover {
+  background-color: #854D0E;
+}
+
+.botao-dono.ativo {
+  background-color: #cb583b;
+  color: white;
+}
+.toy-card {
+  transition: transform 0.3s;
+}
+
+.toy-card:hover {
+  transform: translateY(-20px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.toy-card img {
+  transition: transform 0.3s;
+}
+
+.toy-card:hover img {
+  transform: scale(1.1) rotate(5deg); 
+}
+
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.toy-card {
+    animation: cairDoCeu 2.0s ease-out backwards;
+}
+
+
+.toy-card:nth-child(1) { animation-delay: 0.1s; }
+.toy-card:nth-child(2) { animation-delay: 0.5s; }
+.toy-card:nth-child(3) { animation-delay: 1.0s; }
+.toy-card:nth-child(4) { animation-delay: 1.5s; }
+.toy-card:nth-child(5) { animation-delay: 2.0s; }
+
+@keyframes cairDoCeu {
+  from {
+    opacity: 0;
+    transform: translateY(-100px) rotate(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(0);
+  }
+}
+
