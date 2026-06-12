@@ -5,11 +5,11 @@ import Jessie from '../assets/Jessie.png';
 import Woody from '../assets/Woody.png';
 
 const toys = [
-  { nome: "Bala no Alvo", dono: "Andy", imagem: Bala },
-  { nome: "Buzz Lightyear", dono: "Andy", imagem: Buzz },
-  { nome: "Garfinho", dono: "Bonnie", imagem: Garfinho },
-  { nome: "Jessie", dono: "Andy", imagem: Jessie },
-  { nome: "Woody", dono: "Andy", imagem: Woody }
+  { nome: "Bala no Alvo", dono: "Andy", imagem: Bala, id: 1 },
+  { nome: "Buzz Lightyear", dono: "Andy", imagem: Buzz, id: 2 },
+  { nome: "Garfinho", dono: "Bonnie", imagem: Garfinho, id: 3 },
+  { nome: "Jessie", dono: "Andy", imagem: Jessie, id: 4 },
+  { nome: "Woody", dono: "Andy", imagem: Woody, id: 5 }
 ];
 
-export default toys;
+export const Toystory = toys;

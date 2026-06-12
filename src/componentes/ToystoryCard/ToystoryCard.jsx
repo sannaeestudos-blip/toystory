@@ -1,24 +1,24 @@
+import { useNavigate } from 'react-router-dom'
 import './ToystoryCard.css'
-import { useState } from 'react'
 
+function ToystoryCard({ nome, dono, imagem, id }) {
+  const navigate = useNavigate()
 
-function ToystoryCard({ nome, dono, caminhoImagem }) {
-  const [mostrarDono, setMostrarDono] = useState(false) // 2. Cria o estado
+  function handleClick() {
+    navigate(`/${nome.toLowerCase().replaceAll(' ', '-')}`)
+  }
 
   return (
     <div className="toy-card">
-      <img src={caminhoImagem} alt={nome} />
+      <img src={imagem} alt={nome} />
       <h2>{nome}</h2>
       
-   
-      {mostrarDono && <p>Dono: {dono}</p>} 
-      
-     <button 
-  className={`botao-dono ${mostrarDono ? 'ativo' : ''}`}
-  onClick={() => setMostrarDono(!mostrarDono)}
->
-  {mostrarDono ? 'Esconder dono' : 'Quem é meu dono?'}
-</button>
+      <button 
+        className="botao-dono"
+        onClick={handleClick}
+      >
+        Escolher Dono
+      </button>
     </div>
   )
 }
