@@ -5,9 +5,9 @@
   }
 }
 .botao-dono {
-  background-color: #A16207; 
-  color: #FEF3C7;
-  border: 2px solid #d5af32;
+  background-color: #8d5405; 
+  color: #ffffff;
+  border: 2px solid #675109;
   border-radius: 4px;
   padding: 8px 12px;
   font-family: 'Georgia', serif; 
@@ -16,7 +16,7 @@
 }
 
 .botao-dono:hover {
-  background-color: #854D0E;
+  background-color: #75450e;
 }
 
 .botao-dono.ativo {

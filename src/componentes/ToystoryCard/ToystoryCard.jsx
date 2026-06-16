@@ -5,12 +5,16 @@ function ToystoryCard({ nome, dono, imagem, id }) {
   const navigate = useNavigate()
 
   function handleClick() {
-    navigate(`/${nome.toLowerCase().replaceAll(' ', '-')}`)
+ navigate(`/${nome.toLowerCase().replaceAll(' ', '-')}`)
   }
 
   return (
     <div className="toy-card">
-      <img src={imagem} alt={nome} />
+      <img src={imagem} 
+      alt={nome} 
+      loading='lazy' 
+      width={200} 
+      height={200}/>
       <h2>{nome}</h2>
       
       <button 

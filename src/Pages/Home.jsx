@@ -11,6 +11,7 @@ function Home() {
   }, [])
 
   return (
+    <main>
     <div className="home-container">
       <h1 className="titulo-toystory">Toy Story</h1>
       <h2 className="subtitulo">Total de brinquedos: {listaToys.length}</h2>
@@ -21,6 +22,7 @@ function Home() {
         ))}
       </section>
     </div>
+    </main>
   )
 }
 

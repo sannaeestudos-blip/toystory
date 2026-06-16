@@ -1,5 +1,5 @@
 .home-container {
-  background-image: url('/Planodefundo.jpg');
+  background-image: url('/Planodefundo.webp');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -21,7 +21,7 @@
 
 .subtitulo {
   font-size: 36px;
-  color: white;
+  color: #E23636;
   text-align: center;
   text-shadow: 2px 2px 4px #000;
   margin: 0;

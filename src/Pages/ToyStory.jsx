@@ -21,7 +21,7 @@ function ToyStory() {
         </Helmet>
         <div className="pagina-toystory">
           <h1>Brinquedo não encontrado</h1>
-          <button className="botao-voltar" onClick={() => navigate('/')}>
+          <button className="botao-voltar" onClick={() => navigate('/toystory')}>
             Voltar pra Home
           </button>
         </div>
@@ -51,7 +51,7 @@ function ToyStory() {
           <button className="botao-bonnie">Bonnie</button>
         </div>
 
-        <button className="botao-voltar" onClick={() => navigate('/')}>
+        <button className="botao-voltar" onClick={() => navigate('/toystory')}>
           Voltar pra Home
         </button>
       </div>
